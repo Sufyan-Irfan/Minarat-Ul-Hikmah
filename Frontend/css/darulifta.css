@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    list-style: none;
+}
+
+.login-btn , .logout-btn{
+    border-color: white;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.login-btn:hover , .logout-btn:hover {
+    background: white;
+    color: #003a63;
+}
+
+
+.navbar {
+    direction: rtl;
+    text-align: right;
+    background-color: #00538e !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar brand logo */
+.navbar-brand img {
+    filter: brightness(0) invert(1);
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    font-size: 22px;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+
+/* Underline animation effect on hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active {
+    color: #f0ad4e !important;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #003a63;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white !important;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #005c9c;
+}
+
+/* Ensure no underline for dropdown */
+.navbar-nav .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Show dropdown on hover instead of click */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Search bar and button styling */
+.form-control {
+    background: white;
+    border-radius: 20px;
+    padding: 8px 10px;
+    border: none;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    
+}
+
+.btn-outline-success {
+    border-color: white;
+    color: white;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.btn-outline-success:hover {
+    background: white;
+    color: #003a63;
+}
+
+footer {
+    background-color: #004675;
+}
+
+.footer-col1 img {
+    width: 180px;
+}
+
+.footer-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.footer-social li a {
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 47px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer-social li a:hover {
+    background: #f0ad4e;
+    color: #003a63;
+}
+
+.footer-social li a .icons {
+    color: #2E4E59;
+}
+
+.footer-social li:hover a .icons {
+    color: #003a63;
+}
+
+footer .widget-title {
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+footer .f-item.link li {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+footer .f-item.link li {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+footer .f-item.link li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+}
+
+footer .f-item.link li a:hover {
+    color: #f0ad4e;
+}
+
+.ftr-inp {
+    box-shadow: inherit;
+    /* border: none; */
+    min-height: 60px;
+    padding-left: 20px;
+    text-decoration: none;
+    outline: none;
+    width: 80%;
+}
+
+.f-item.contact li {
+    display: flex;
+    margin-top: 20px;
+}
+
+.f-item.contact li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.f-item.contact li a:hover {
+    color: #f0ad4e;
+}
+
+.f-item.contact li strong {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-item.newsletter form button {
+    height: 60px;
+    width: 50px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: #2E4E59;
+    color: #fff;
+}
+
+.thnkx-msg {
+    color: #f0ad4e;
+    margin-top: 10px;
+    display: block;
+}
+
+footer ul, footer li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

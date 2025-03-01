@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Minarat Ul Hikmat</title>
+</head>
+
+<body>
+
+    <nav style="direction: rtl; letter-spacing: 1px; font-size: 18px; background-color: #003a63; color: #fff; font-family: 'Jameel Noori Nastaleeq Kasheeda', serif;"
+        class="text-center">
+        <div class="container">
+            <div class="row pt-1">
+                <div class="col-lg-4">
+                    <p class="islamic-date"></p>
+                </div>
+                <div class="col-lg-4">
+                    <p>بسم اللہ الرحمن الرحیم</p>
+                </div>
+                <div class="col-lg-4">
+                    <a id="auth-button" href="">
+                        <button class="btn login-btn" type="button"></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-0 ms-sm-4" href="#"><img src="./images/minara tul hikmah logo.png" width="120px"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DAR-UL-IFTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DONATION</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            DROPDOWN <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex me-0 me-sm-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> -->
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand me-0 me-sm-5" href="#"><img src="./images/minara tul hikmah logo.png" width="120px"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">سرورق</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تعارف</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./html/darulifta.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            دار الافتاء <span class="arrow">&#9662;</span>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./html/darulifta.html">فتاوٰی جات</a></li>
+                            <li><a class="dropdown-item" href="#">مسئلہ پوچھیں</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">جامعہ کی ویب سائٹ پر جاری ہونے والے جوابات کی
+                                    حیثیت</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">رابطہ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تعاون</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            مزید <span class="arrow">&#9662;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">آپشن 1</a></li>
+                            <li><a class="dropdown-item" href="#">آپشن 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">مزید کچھ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-0 ms-sm-3" role="search">
+                    <input class="form-control ms-2" type="search" placeholder="تلاش کریں" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">تلاش</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" data-bs-ride="carousel" class="carousel slide carousel-fade slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/crousel-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/crousel-1.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="cards-sec py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4  col-md-6 col-sm-12 mb-3 mb-sm-0">
+                    <div class="card my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 col-sm-12 mb-3 mb-sm-0">
+                    <div class="card my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 col-sm-12 mb-3 mb-sm-0">
+                    <div class="card my-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="of-the-day my-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 d-flex ">
+                    <div class=" w-90 h-100">
+                        <h3 class="fatwa-heading">آج کا فتوی</h3>
+                        <div class="ayat">
+                            <img src="https://data2.dawateislami.net/static/images/main-…bsite/fatwa/29-Daily-fatwa-web-banner-shabaan.jpg" alt="" class="fatwa-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-12 mb-4 d-flex ">
+                    <div class=" w-90 h-100">
+                        <h3 class="hadith-heading">آج کی حدیث شریف</h3>
+                        <div class="ayat">
+                            <img src="https://data2.dawateislami.net/static/images/main-website/hadees/29-shaban.jpg" alt="" class="hadith-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4 d-flex ">
+                    <div class=" w-90 h-100">
+                        <h3 class="ayat-heading">آج کی قرآنی آیت</h3>
+                        <div class="ayat">
+                            <img src="https://data2.dawateislami.net/static/images/main-website/quran/29-Shabaan-1446-web-banner.jpg"
+                                alt="" class="ayat-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sawalat py-5">
+        <div class="container bg-light my-4">
+            <div class="row">
+                <h1 class="muntakhib-sawalat py-2">منتخب سوالات</h1>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="islam-arkan col-sm-12 col-md-6 col-lg-6 animate fadeInUp animated" data-animation="fadeInUp"
+                    data-duration="200">
+                    <h4>نماز کے اوقات</h4>
+                    <div class="islam-box">
+                        <p class="" style="direction: rtl;"><span class="islamic-date"></span> کراچی میں نماز کے اوقات
+                        </p>
+                        <ul class="namaz-okat">
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA=">
+                                </div>
+                                <span class="namaz">فجر</span>
+                                <span class="time"></span>
+                            </li>
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA=">
+                                </div>
+                                <span class="namaz">طلوع</span>
+                                <span class="time"></span>
+                            </li>
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRlYBAABXRUJQVlA4IEoBAABwCQCdASodACAAPm0ylUekIqIhKAgAgA2JbACdMoR5n5n+MHLC6xd7snDyQO0BtxvMBjsG8n+UBFKC6BgZwfQxgDKAijyzzq9aIujxgP0GWtBtXgAA/v92lQiVVWETiNccLw54/0sJY/YfgI+J5y7w7UFRp16XKkyiv1DjtkI4z9UaN/HL7Gmyn6bjHJRXrCqYDeK9hHxxam1532aMiShaWxKmEQQ5yoXsFumEIXsKMphsR94j9IT9cJ93TydAJo6+YN2IHbMSNicayt+KcmVmKOlv+rkJn46DcL2K0Yejs8ujv+BrHgLgvsHG6JCI+0K6JMfPA7Rodp6p9ZsRbbKEzI8m6L14sQN5yEpZPznCnTkNoIQva4QMOa5s88Wk2a+ZCgqX9HSD4EZXoxj+tHpllTj3dAVHSN+0feXHm7/zgPQsgdBiRyD9QAA="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRlYBAABXRUJQVlA4IEoBAABwCQCdASodACAAPm0ylUekIqIhKAgAgA2JbACdMoR5n5n+MHLC6xd7snDyQO0BtxvMBjsG8n+UBFKC6BgZwfQxgDKAijyzzq9aIujxgP0GWtBtXgAA/v92lQiVVWETiNccLw54/0sJY/YfgI+J5y7w7UFRp16XKkyiv1DjtkI4z9UaN/HL7Gmyn6bjHJRXrCqYDeK9hHxxam1532aMiShaWxKmEQQ5yoXsFumEIXsKMphsR94j9IT9cJ93TydAJo6+YN2IHbMSNicayt+KcmVmKOlv+rkJn46DcL2K0Yejs8ujv+BrHgLgvsHG6JCI+0K6JMfPA7Rodp6p9ZsRbbKEzI8m6L14sQN5yEpZPznCnTkNoIQva4QMOa5s88Wk2a+ZCgqX9HSD4EZXoxj+tHpllTj3dAVHSN+0feXHm7/zgPQsgdBiRyD9QAA=">
+                                </div>
+                                <span class="namaz">زوال</span>
+                                <span class="time"></span>
+                            </li>
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRlYBAABXRUJQVlA4IEoBAABwCQCdASodACAAPm0ylUekIqIhKAgAgA2JbACdMoR5n5n+MHLC6xd7snDyQO0BtxvMBjsG8n+UBFKC6BgZwfQxgDKAijyzzq9aIujxgP0GWtBtXgAA/v92lQiVVWETiNccLw54/0sJY/YfgI+J5y7w7UFRp16XKkyiv1DjtkI4z9UaN/HL7Gmyn6bjHJRXrCqYDeK9hHxxam1532aMiShaWxKmEQQ5yoXsFumEIXsKMphsR94j9IT9cJ93TydAJo6+YN2IHbMSNicayt+KcmVmKOlv+rkJn46DcL2K0Yejs8ujv+BrHgLgvsHG6JCI+0K6JMfPA7Rodp6p9ZsRbbKEzI8m6L14sQN5yEpZPznCnTkNoIQva4QMOa5s88Wk2a+ZCgqX9HSD4EZXoxj+tHpllTj3dAVHSN+0feXHm7/zgPQsgdBiRyD9QAA="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRlYBAABXRUJQVlA4IEoBAABwCQCdASodACAAPm0ylUekIqIhKAgAgA2JbACdMoR5n5n+MHLC6xd7snDyQO0BtxvMBjsG8n+UBFKC6BgZwfQxgDKAijyzzq9aIujxgP0GWtBtXgAA/v92lQiVVWETiNccLw54/0sJY/YfgI+J5y7w7UFRp16XKkyiv1DjtkI4z9UaN/HL7Gmyn6bjHJRXrCqYDeK9hHxxam1532aMiShaWxKmEQQ5yoXsFumEIXsKMphsR94j9IT9cJ93TydAJo6+YN2IHbMSNicayt+KcmVmKOlv+rkJn46DcL2K0Yejs8ujv+BrHgLgvsHG6JCI+0K6JMfPA7Rodp6p9ZsRbbKEzI8m6L14sQN5yEpZPznCnTkNoIQva4QMOa5s88Wk2a+ZCgqX9HSD4EZXoxj+tHpllTj3dAVHSN+0feXHm7/zgPQsgdBiRyD9QAA=">
+                                </div>
+                                <span class="namaz">عصر</span>
+                                <span class="time"></span>
+                            </li>
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRmQBAABXRUJQVlA4IFgBAAAQBwCdASodACAAPm0ylEgkIqIhKAgAgA2JaACdMoR02XA6TVwAACPPo7rFbsatyFk+VVRenGsiuZIswuuZOLtpgAD+/1A9MfZQLAx61BcnbzwvD3HxsP9/A3+st+nTWLp2M2qpQndXh/Gb674aLZdr99wwTLGAdcoAB1ffpkhAcBoXUDFpHNGhSuqbac92hD7yJW9PD1qvHNQsIwrPDHprPHt3oFmqzyduDXNtlKNLvRQ1N5/Bm8rJ01rWae5CiFD83MPj9r4Z4427CT+cgmpWsV2J6uG13yfQqA6/pAs0Up07EcL3QEekPIsl83/Oazh4ik8F81Z+YgodyBo9rXfXTPCuQqIoapWIz2QOWmQL9fNMtWQSlMCIkxxfdS//Wiqvdb/sV5iE/V7YXiFtIXZPWFJw1998cn7BODeCrkSTilwvZGDqsoz48/EUA1zGz2dVKYMmvA4AAA=="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRmQBAABXRUJQVlA4IFgBAAAQBwCdASodACAAPm0ylEgkIqIhKAgAgA2JaACdMoR02XA6TVwAACPPo7rFbsatyFk+VVRenGsiuZIswuuZOLtpgAD+/1A9MfZQLAx61BcnbzwvD3HxsP9/A3+st+nTWLp2M2qpQndXh/Gb674aLZdr99wwTLGAdcoAB1ffpkhAcBoXUDFpHNGhSuqbac92hD7yJW9PD1qvHNQsIwrPDHprPHt3oFmqzyduDXNtlKNLvRQ1N5/Bm8rJ01rWae5CiFD83MPj9r4Z4427CT+cgmpWsV2J6uG13yfQqA6/pAs0Up07EcL3QEekPIsl83/Oazh4ik8F81Z+YgodyBo9rXfXTPCuQqIoapWIz2QOWmQL9fNMtWQSlMCIkxxfdS//Wiqvdb/sV5iE/V7YXiFtIXZPWFJw1998cn7BODeCrkSTilwvZGDqsoz48/EUA1zGz2dVKYMmvA4AAA==">
+                                </div>
+                                <span class="namaz">غروب</span>
+                                <span class="time"></span>
+                            </li>
+                            <li>
+                                <div class="sun"><img
+                                        data-src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA="
+                                        alt="" class="lazy loaded"
+                                        src="data:image/webp;base64,UklGRm4BAABXRUJQVlA4IGIBAAAwBwCdASodACAAPm0wk0ckIyGhKAqogA2JZQC26P94At3qS9nJJq3NcK/RgGxInX/1JIkRZopsi9bV7AybkuFmeSAA/v92kuv6e5Tte/CUqDAv//WuyNa9Rz2QfeSV/+UvLX8TTszWseT8x1zLlntiW2Y098DXa9YB6LLdYla409d5rvxvfF+j6Xo3fL+VIFL43TCrsZXyfxNwUV1scBap3IpNPLpUlQYP/C2bMjxQv7Nwp6jmHoqx2vA/zRi3lCi0H0nDbjRLlslupvNpruKk0Ebe1CC/ff6Xmf/W8zhsgQBUqwjGwXk1Uh7IIVU0N44UI2JFySzDHb7Bf7BXBzRifLsqjacBfoafsE4v5BwibJdnEqjhxyKG8Pxgi1NyW503mjT++FgYq9yDBZ9WdFvDfXIUQQxF8rkjxyfi8fvapp2sl48xqwOcAJR33xxLE3zfh++hngTYuIRUi3C5i7wAAAA=">
+                                </div>
+                                <span class="namaz">عشاء</span>
+                                <span class="time"></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-col1 mt-5">
+
+                    <div class="footer-about">
+                        <img src="./images/minara tul hikmah logo.png" alt="">
+                    </div>
+                    <div class="footer-social mt-30">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/designims" target="_blank"><i
+                                        class="icons fa-brands fa-facebook fa-xl"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/03271666467" target="_blank"><i
+                                        class="icons fa-brands fa-whatsapp fa-xl"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.Linkedin.com/company/designims" target="_blank"><i
+                                        class="icons fa-brands fa-linkedin fa-xl"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+                    <div class="f-item link">
+                        <h4 class="widget-title">Services</h4>
+                        <ul>
+                            <li>
+                                <a href="/service-detail/graphic-designing">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/service-detail/ui-ux">Dar-Ul-Ifta</a>
+                            </li>
+
+                            <li>
+                                <a href="/service-detail/digital-marketing">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/service-detail/digital-marketing">Donation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+                    <div class="f-item contact text-dark">
+                        <h4 class="widget-title">Contact Info</h4>
+                        <ul>
+                            <li>
+                                <div style="color: #fff;" class="content">
+                                    <strong>Address:</strong>
+                                    Karachi, Pakistan
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <strong>Email:</strong>
+                                    <a href="mailto:minaratulhikahg@gmail.com">minaratulhikmah@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content">
+                                    <strong>Phone:</strong>
+                                    <a href="tel:+923123456789">+92 3123456789</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+                    <div class="f-item newsletter text-light">
+                        <h4 class="widget-title">Newsletter</h4>
+                        <p>
+                            Join our subscribers list to get the instant latest news and
+                            special offers.
+                        </p>
+                        <form name="submit-to-google-sheet" class="d-flex" action="#">
+                            <input class="ftr-inp" placeholder="Your Email" name="Email" type="email" id="" required>
+                            <button type="submit">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                        <span class="thnkx-msg" id="thnx-msg"></span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <p class="text-light">Copyright &copy; 2025 <strong style="color: #f0ad4e;"> Minarat-Ul-Hikmah
+                        </strong>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
